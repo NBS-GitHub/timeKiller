@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    /* ========================================================
+This pattern is downloaded from www.subtlepatterns.com 
+If you need more, that's where to get'em.
+======================================================== */
+    background-image: url('../img/bg1.png');
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Bangers', cursive;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper h1,
+.wrapper h2,
+.wrapper a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper h1 {
+    top: 15%;
+}
+
+.wrapper h2 {
+    top: 30%;
+}
+
+.wrapper a {
+    display: block;
+    padding: 2vw 4vw;
+    border: 2px solid #fff;
+    top: 60%;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    transition: .3s;
+}
+
+.wrapper a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+h1,
+h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 2vw auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 1vw auto;
+}
+
+.board {
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 90vw;
+    height: 70vh;
+    box-shadow: inset 0 0 100px 10px #000;
+    border: 1px solid #000;
+    border-radius: 1vw;
+    cursor: crosshair;
+}
+
+.bombWrap {
+    position: relative;
+    transform: rotate(90deg);
+    transform-origin: -50% -50%;
+    animation: spin1 linear 10s;
+}
+
+.bomb {
+    position: absolute;
+    transform: translate(-100%, -100%) scale(1);
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    margin: 1vw auto;
+    font-size: 3rem;
+}
+
+.description * {
+    flex-basis: 50%;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.back:hover {
+    text-decoration: underline;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.kitten {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    color: darkgreen;
+    text-shadow: 0 0 5px green;
+    animation: textAppear 4s 1 linear both;
+}
