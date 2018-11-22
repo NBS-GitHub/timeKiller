@@ -3,6 +3,8 @@ The 'desktop-first-and-only' game made for fun with use of randomness in Java Sc
 
 Click the bombs, before they explode. The time to disarm each bomb amounts to 3 seconds.
 
+Launch the index.html file to begin.
+
 
 The uses of randomness:
 
