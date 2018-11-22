@@ -1,3 +1,9 @@
+// Easter egg:
+// (function (UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A) {
+// livesCount = 30;
+// })();
+// The end of the easter egg.
+
 // board is the space, where the bomb is being displayed
 const board = document.querySelector('.board');
 
